@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+
+  <body class="bg-[--black-dark] flex justify-center items-center min-h-screen">
+    <div
+      class="min-h-[50dvh] w-[60vw] bg-[--black-light] rounded-xl grid grid-cols-[3rem_1fr] grid-rows-[3.5rem_1fr] p-5 text-[--text-normal] [&_span]:text-[--text-dark] [&_button:hover_span]:text-[--text-normal] gap-x-8"
+    >
+      <!--Side Bar-->
+      <nav
+        class="bg-[--black-dark] rounded-xl flex flex-col justify-center row-span-2"
+      >
+        <ul
+          class="space-y-4 [&>[aria-selected=true]]:bg-[--black-light] [&>[aria-selected=true]]:p-1 [&>[aria-selected=true]]:rounded-xl [&>[aria-selected=true]_span]:text-[--text-normal] flex flex-col items-center"
+        >
+          <li>
+            <button>
+              <span class="material-symbols-outlined">chat</span>
+            </button>
+          </li>
+          <li aria-selected="true">
+            <button>
+              <span class="material-symbols-outlined">group</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="material-symbols-outlined">nutrition</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="material-symbols-outlined">settings</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!--Header-->
+      <header class="flex justify-between items-center">
+        <button class="flex gap-2 items-center">
+          <span class="material-symbols-outlined"> west </span>
+          <h1 class="text-xl font-bold">Groups</h1>
+        </button>
+        <div class="[&_button]:bg-[--black-dark] [&_span]:p-2">
+          <button data-set-display="grid" class="rounded-l-xl">
+            <span class="material-symbols-outlined"
+              >view_comfy_alt</span
+            ></button
+          ><button data-set-display="list" class="rounded-r-xl">
+            <span class="material-symbols-outlined">view_agenda</span>
+          </button>
+        </div>
+      </header>
+      <!--Groups Listing-->
+      <main
+        data-display="grid"
+        class="grid [&_button]:relative [&_button]:rounded-xl [&_p]:text-xs [&_h2]:mt-2 gap-4"
+      >
+        <button class="bg-[--black-xlight]">
+          <div>
+            <div
+              class="bg-[--black-dark] rounded-[50vw] w-[2rem] h-[2rem] grid items-center mx-auto"
+            >
+              <span class="material-symbols-outlined"> add </span>
+            </div>
+            <h2 class="text-xs">Create Group</h2>
+          </div>
+        </button>
+        <button data-notification class="bg-[--black-dark]">
+          <div>
+            <img
+              class="mx-auto rounded-[50vw]"
+              src="https://placehold.co/45x45"
+              alt="Cuisine"
+            />
+            <h2>Cuisine</h2>
+            <p>36 members</p>
+          </div>
+        </button>
+        <button class="bg-[--black-dark]">
+          <div>
+            <img
+              class="mx-auto rounded-[50vw]"
+              src="https://placehold.co/45x45"
+              alt="Art"
+            />
+            <h2>Art</h2>
+            <p>9 members</p>
+          </div>
+        </button>
+        <button data-notification class="bg-[--black-dark]">
+          <div>
+            <img
+              class="mx-auto rounded-[50vw]"
+              src="https://placehold.co/45x45"
+              alt="Workout"
+            />
+            <h2>Workout</h2>
+            <p>27 members</p>
+          </div>
+        </button>
+        <button data-notification class="bg-[--black-dark]">
+          <div>
+            <img
+              class="mx-auto rounded-[50vw]"
+              src="https://placehold.co/45x45"
+              alt="Gaming"
+            />
+            <h2>Gaming</h2>
+            <p>105 members</p>
+          </div>
+        </button>
+        <button class="bg-[--black-dark]">
+          <div>
+            <img
+              class="mx-auto rounded-[50vw]"
+              src="https://placehold.co/45x45"
+              alt="Hiking"
+            />
+            <h2>Hiking</h2>
+            <p>97 members</p>
+          </div>
+        </button>
+        <button class="bg-[--black-dark]">
+          <div>
+            <img
+              class="mx-auto rounded-[50vw]"
+              src="https://placehold.co/45x45"
+              alt="Yoga"
+            />
+            <h2>Yoga</h2>
+            <p>65 members</p>
+          </div>
+        </button>
+      </main>
+    </div>
+  </body>
+</html>
