@@ -18,11 +18,13 @@ h2 {
 }
 
 [data-display="grid"] {
-  grid-template-columns: repeat(3, 1fr);
+  --card-width: 8rem;
+  --card-height: 10rem;
+  grid-template-columns: repeat(3, var(--card-width));
   @media (width > 800px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, var(--card-width));
   }
-  grid-auto-rows: 8rem;
+  grid-auto-rows: var(--card-height);
 }
 
 [data-display="list"] {
